@@ -1,0 +1,4 @@
+Task 1: use regex to find each game id & number of cubes for each colour. Then find max cubes for each colour for each game, and 
+        filter such that only games with n_cubes <= limit for the three colour limits. Then sum the game IDs.
+
+Task 2: do the same as the previous solution, but don't filter the games. Instead simply sum the "powers" of the max cube numbers.
