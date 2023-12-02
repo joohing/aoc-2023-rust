@@ -1,0 +1,7 @@
+This solution does the following:
+- For task 1, simply start out by filtering the alphabetic chars and then picking the first and last numeric chars.
+- For task 2, map an enumeration on the chars (i, chr) in the following way: 
+  For an iterator on the keys ("one", "two", etc.) find a key such that the key fits between current index and end of the line (to avoid index out of bounds).
+  If this key is also equal to the string slice input[i..i+key.len()], then there must be a spelled out number there. Replace the first letter of the number
+  with the number of interest. (This is okay because we are going left -> right, so sevenine -> 7even9ine and they don't intervene with each other.)
+  From here use the method from task 1 to filter out chars, and then create a number from the first and last digit. Then sum them up.
